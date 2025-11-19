@@ -1,0 +1,57 @@
+{
+  "playlistCollection": [
+    {
+      "id": "afd70b65-32cf-4e29-a814-191700ab76d3",
+      "title": "My New Playlist",
+      "category": "Classical",
+      "rating": "4",
+      "songs": [],
+      "date": "2025-03-24T14:30:34.112Z"
+    },
+    {
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "id": "e93f4b34-140a-4a25-b8ae-36e2ff24aff5",
+      "title": "Homer's Playlist",
+      "category": "Classical",
+      "rating": "4",
+      "songs": [],
+      "date": "2025-03-24T14:39:25.112Z"
+    },
+    {
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "id": "f9de08c1-5567-4ad7-a685-fbce474fa9d4",
+      "title": "Marge's Playlist",
+      "category": "Pop",
+      "rating": "3",
+      "songs": [],
+      "date": "2025-03-24T14:40:09.467Z"
+    },
+    {
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "id": "accf8e25-f921-478e-ad0c-9e6c5986ead9",
+      "title": "hi",
+      "category": "chill",
+      "rating": "good",
+      "songs": [],
+      "date": "2025-04-13T18:35:55.629Z"
+    },
+    {
+      "userid": "268d7483-a4e7-4f8b-8c1d-1deb7bca8e6b",
+      "id": "2f15a90d-ed19-477b-9c4f-89978f4fb030",
+      "title": "hiii",
+      "category": "party",
+      "rating": "awesome",
+      "songs": [],
+      "date": "2025-04-13T18:46:37.669Z"
+    },
+    {
+      "userid": "147a2d15-fd90-493c-a119-cb40b8bce222",
+      "id": "af203ff8-5785-44de-b439-0de96d14db64",
+      "title": "test",
+      "category": "Chill",
+      "rating": "4",
+      "songs": [],
+      "date": "2025-04-30T11:39:08.134Z"
+    }
+  ]
+}

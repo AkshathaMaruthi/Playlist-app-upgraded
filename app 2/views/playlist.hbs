@@ -1,0 +1,24 @@
+{{> menu}}
+
+{{#if error}}
+  <div class="ui red message">
+    {{error}}
+  </div>
+{{/if}}
+
+{{#if success}}
+  <div class="ui green message">
+    {{success}}
+  </div>
+{{/if}}
+
+{{#with singlePlaylist}}
+  <section class="ui center aligned middle aligned scrolling segment">
+    <h2 class="ui header">{{title}}</h2>
+    {{> listsongs}}
+  </section>
+
+  <section class="ui center aligned middle aligned segment">
+    {{> addsong}}
+  </section>
+{{/with}}

@@ -1,0 +1,69 @@
+{{> menu}}
+
+<section class="ui center aligned middle aligned segment">
+  <h2 class="ui header">
+    Welcome to the Playlist App, {{fullname}}!
+  </h2>
+
+  <p>This app will allow users to create and maintain a collection of playlists.</p>
+
+  <img src="https://cdn.glitch.global/b453d3c5-d9bb-42c3-ac84-cfeadc638eab/HD-wallpaper-colors-of-music-bars-colorful-measure-sound-refection-abstract-lights-sparkle-beams-rays-bright-beat-color-beats-musical.jpg?v=1683397743824" class="ui centered image">
+
+  <!-- App Info Section -->
+  <div class="ui five statistics" style="margin-top: 1em;">
+    {{#with info}}
+      <div class="statistic">
+        <div class="value"><i class="music icon"></i></div>
+        <div class="label">App Title:<br>{{appTitle}}</div>
+      </div>
+
+      <div class="statistic">
+        <div class="value"><i class="code branch icon"></i></div>
+        <div class="label">App Version:<br>Version {{version}}</div>
+      </div>
+
+      <div class="statistic">
+        <div class="value"><i class="map pin icon"></i></div>
+        <div class="label">Made in:<br>{{location}}</div>
+      </div>
+
+      <div class="statistic">
+        <div class="value"><i class="user icon"></i></div>
+        <div class="label">Created by:<br>{{creators.0.name}}</div>
+      </div>
+
+      <div class="statistic">
+        <div class="value"><i class="user plus icon"></i></div>
+        <div class="label">With help from:<br>{{creators.1.name}}</div>
+      </div>
+    {{/with}}
+  </div>
+
+  <hr class="ui divider" style="margin: 3rem 0;">
+
+  <!-- Exercise 4: App-Wide Statistics -->
+  <h3 class="ui header">App Statistics (All Users)</h3>
+  <div class="ui four statistics" style="margin-top: 1rem;">
+
+    <div class="statistic">
+      <div class="value">{{numUsers}}</div>
+      <div class="label">Users</div>
+    </div>
+
+    <div class="statistic">
+      <div class="value">{{numPlaylists}}</div>
+      <div class="label">Playlists</div>
+    </div>
+
+    <div class="statistic">
+      <div class="value">{{numSongs}}</div>
+      <div class="label">Songs</div>
+    </div>
+
+    <div class="statistic">
+      <div class="value">{{averageSongs}}</div>
+      <div class="label">Avg / Playlist</div>
+    </div>
+
+  </div>
+</section>

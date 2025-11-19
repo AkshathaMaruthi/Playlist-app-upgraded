@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "firstName": "homer",
+      "lastName": "simpson",
+      "email": "homer@simpson.com",
+      "password": "secret",
+      "id": "3ad52697-6d98-4d80-8273-084de55a86c0"
+    },
+    {
+      "firstName": "marge",
+      "lastName": "simpson",
+      "email": "marge@simpson.com",
+      "password": "secret",
+      "id": "2b6f0989-7b7f-4a38-ad26-aa06b922d751"
+    },
+    {
+      "firstName": "Akshatha",
+      "lastName": "Maruthi",
+      "email": "akshathamaruthi2204@gmail.com",
+      "password": "akshu",
+      "id": "268d7483-a4e7-4f8b-8c1d-1deb7bca8e6b"
+    },
+    {
+      "firstName": "Mary",
+      "lastName": "Lyng",
+      "email": "mary.lyng@setu.ie",
+      "password": "Trustno1",
+      "id": "147a2d15-fd90-493c-a119-cb40b8bce222"
+    }
+  ]
+}

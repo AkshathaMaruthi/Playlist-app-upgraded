@@ -1,0 +1,28 @@
+{
+  "name": "playlist-app",
+  "version": "0.0.1",
+  "description": "A little playlist maker",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+"dependencies": {
+    "express": "^4.21.2",
+    "express-handlebars": "^8.0.1",
+    "lowdb": "^7.0.1",
+    "winston": "^3.17.0",
+    "body-parser": "^2.1.0",
+    "uuid": "^11.1.0",
+    "cookie-parser": "^1.4.7"
+},
+
+  "engines": {
+    "node": "16.x"
+  },
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}

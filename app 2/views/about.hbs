@@ -1,0 +1,89 @@
+{{> menu id="about"}}
+
+<section class="ui left aligned middle aligned segment" style="padding: 2rem; max-width: 800px; margin: auto; font-family: sans-serif;">
+
+  <h1>About Us</h1>
+  <p>
+    <strong>Welcome to the Playlist App!</strong> We’re here to help you organize and enjoy your music with ease. Whether you’re creating a playlist for a workout, a party, or just your daily vibe, we’ve got you covered.
+  </p>
+  <p>
+    <strong>What We Do:</strong><br>
+    The Playlist App makes it easy to create, manage, and share playlists. Discover new music, add your favorites, and enjoy them all in one place.
+  </p>
+  <p>
+    <strong>Features:</strong>
+    <ul>
+      <li>Create and organize playlists</li>
+      <li>Discover new music</li>
+      <li>Share your playlists with friends</li>
+      <li>Sync across all your devices</li>
+    </ul>
+  </p>
+  <p>
+    We believe music should be simple, personal, and fun. Thanks for choosing the Playlist App!
+  </p>
+
+  <hr style="margin: 2rem 0;">
+
+  <h2 class="ui header">App Statistics</h2>
+  <p>The playlist app now contains:</p>
+
+  <div class="ui center aligned grid" style="margin-top: 2rem;">
+    <div class="eight wide column">
+      <div class="ui five statistics">
+
+        <div class="statistic">
+          <div class="value" style="font-size: 2.5rem;">
+            <i class="microphone icon" style="font-size: 3rem; margin-bottom: 0.5rem;"></i><br>
+            {{displayNumPlaylists}}
+          </div>
+          <div class="label" style="margin-top: 0.5rem;">
+            Playlists
+          </div>
+        </div>
+
+        <div class="statistic">
+          <div class="value" style="font-size: 2.5rem;">
+            <i class="music icon" style="font-size: 3rem; margin-bottom: 0.5rem;"></i><br>
+            {{displayNumSongs}}
+          </div>
+          <div class="label" style="margin-top: 0.5rem;">
+            Songs
+          </div>
+        </div>
+
+        <div class="statistic">
+          <div class="value" style="font-size: 2.5rem;">
+            <i class="chart bar outline icon" style="font-size: 3rem; margin-bottom: 0.5rem;"></i><br>
+            {{averageSongs}}
+          </div>
+          <div class="label" style="margin-top: 0.5rem;">
+            Avg / Playlist
+          </div>
+        </div>
+
+        <div class="statistic">
+          <div class="value" style="font-size: 2.5rem;">
+            <i class="list ul icon" style="font-size: 3rem; margin-bottom: 0.5rem;"></i><br>
+            {{largestPlaylistTitle}}
+          </div>
+          <div class="label" style="margin-top: 0.5rem;">
+            Largest
+          </div>
+        </div>
+
+        <div class="statistic">
+          <div class="value" style="font-size: 2.5rem;">
+            <i class="list ol icon" style="font-size: 3rem; margin-bottom: 0.5rem;"></i><br>
+            {{smallestPlaylistTitle}}
+          </div>
+          <div class="label" style="margin-top: 0.5rem;">
+            Smallest
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>

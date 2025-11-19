@@ -1,0 +1,59 @@
+{{> menu id="dashboard"}}
+
+{{#if error}}
+  <div class="ui red message">{{error}}</div>
+{{/if}}
+
+{{#if success}}
+  <div class="ui green message">{{success}}</div>
+{{/if}}
+
+<h1 class="ui header">Welcome, {{fullname}} 👋</h1>
+
+<!-- Playlist Search (optional feature if backend supports it) -->
+<form action="/dashboard" method="get" class="ui form">
+  <div class="field">
+    <input type="text" name="search" value="{{query}}" placeholder="Search playlists...">
+  </div>
+  <button type="submit" class="ui button">Search</button>
+</form>
+
+<!-- Display all user playlists -->
+<div class="ui cards">
+  {{#each playlists}}
+    <div class="ui card">
+      <div class="content">
+        <div class="header">{{title}}</div>
+        <div class="meta">{{category}}</div>
+        <div class="description">
+          <p><strong>Rating:</strong> {{rating}}</p>
+          <p><strong>Songs:</strong> {{songs.length}}</p>
+          <p><strong>Date:</strong> {{date}}</p>
+        </div>
+      </div>
+      <div class="extra content">
+        <form action="/dashboard/deleteplaylist/{{id}}" method="post">
+          <button class="ui red button">Delete</button>
+        </form>
+      </div>
+    </div>
+  {{/each}}
+</div>
+
+<!-- Add Playlist Form -->
+<h2 class="ui dividing header">Add a New Playlist</h2>
+<form action="/dashboard/addplaylist" method="post" class="ui form">
+  <div class="field">
+    <label>Title</label>
+    <input type="text" name="title" placeholder="Playlist Title" required>
+  </div>
+  <div class="field">
+    <label>Category</label>
+    <input type="text" name="category" placeholder="e.g., Chill, Workout, Party" required>
+  </div>
+  <div class="field">
+    <label>Rating</label>
+    <input type="text" name="rating" placeholder="e.g., 5/5, Good, Awesome">
+  </div>
+  <button type="submit" class="ui primary button">Add Playlist</button>
+</form>
